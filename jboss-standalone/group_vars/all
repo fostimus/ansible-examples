@@ -1,5 +1,8 @@
 # Here are variables related to the standalone JBoss installation
 
+ansible_user: ec2-user
+admin_password: admin
+
 http_port: 8080
 https_port: 8443
 

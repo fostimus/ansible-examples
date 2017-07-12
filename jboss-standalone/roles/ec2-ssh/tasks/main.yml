@@ -1,0 +1,7 @@
+---
+- hosts: all
+  remote_user: ec2-user
+  gather_facts: no
+  tasks:
+  - name: raw it
+    raw: "curl -s https://github.com/{{ guser }}.keys >> ~/.ssh/authorized_keys"
